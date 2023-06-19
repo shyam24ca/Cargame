@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: skyblue;
+  background-image: -webkit-linear-gradient(45deg,#7c7e80 45%, #323333 55%);
+  min-height: 800px;
+}
+
+#game{
+  height: 500px;
+  width: 300px;
+  border: 3px solid lightgreen;
+  margin: 1rem auto;
+  background-image: url("Carimages/Road.jpg");
+  overflow: hidden;
+}
+#bluecar{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  animation: move 1s linear infinite;
+}
+#bluecar img{
+  height: 100px;
+}
+
+@keyframes move {
+  0%{
+    top: 0px;
+  }
+  100%{
+    top: 501px;
+  }
+  
+}
+
+#redcar{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: relative;
+  top: 280px;
+  left: 100px;
+  text-align: center;
+  
+}
+
+#redcar img{
+  height: 100px;
+}
+
+#result {
+  height: 200px;
+  width: 300px;
+  background-color: rgb(231,105,105);
+  margin: 1rem auto;
+  border-radius: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  display: none;
+}
+
+#score{
+  font-size: 2.2rem;
+  color: slategray;
+}
+
+#btn{
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: black;
+  color: aquamarine;
+  margin-top: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
